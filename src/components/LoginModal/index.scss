@@ -1,0 +1,139 @@
+/********/
+/* Body */
+/********/
+
+.login-modal-body {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.login-modal-form {
+    position: absolute;
+    overflow: hidden;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+}
+
+.login-modal-body-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}.login-modal-body-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 
+        transform 400ms cubic-bezier(0.3, 0.9, 0.3, 0.9),
+        opacity 500ms linear;
+}.login-modal-body-enter-done {
+    opacity: 1;
+    transform: translateX(0);
+}.login-modal-body-exit {
+    opacity: 1;
+    transform: translateX(0);
+}.login-modal-body-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 
+        transform 400ms cubic-bezier(0.3, 0.9, 0.3, 0.9),
+        opacity 500ms linear
+}.login-modal-body-exit-done {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/**********/
+/* Header */
+/**********/
+
+.login-modal-header {
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+}
+
+.login-modal-title {
+    position: absolute;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 2rem;
+    top: 0;
+    left: 0;
+}
+
+.login-modal-header-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}.login-modal-header-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 
+        transform 500ms cubic-bezier(0.3, 0.9, 0.3, 0.9),
+        opacity 500ms linear;
+}.login-modal-header-enter-done {
+    opacity: 1;
+    transform: translateX(0);
+}.login-modal-header-exit {
+    opacity: 1;
+    transform: translateX(0);
+}.login-modal-header-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 
+        transform 500ms cubic-bezier(0.3, 0.9, 0.3, 0.9),
+        opacity 500ms linear
+}.login-modal-header-exit-done {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/**********/
+/* Footer */
+/**********/
+
+.login-modal-footer {
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+}
+
+.login-footer-content {
+    position: absolute;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 2rem;
+    top: 0;
+    left: 0;
+}
+
+.login-modal-title {
+    position: absolute;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 2rem;
+    top: 0;
+    left: 0;
+}
+
+.login-modal-footer-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}.login-modal-footer-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 
+        transform 500ms cubic-bezier(0.3, 0.9, 0.3, 0.9),
+        opacity 500ms linear;
+}.login-modal-footer-enter-done {
+    opacity: 1;
+    transform: translateX(0);
+}.login-modal-footer-exit {
+    opacity: 1;
+    transform: translateX(0);
+}.login-modal-footer-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 
+        transform 500ms cubic-bezier(0.3, 0.9, 0.3, 0.9),
+        opacity 500ms linear
+}.login-modal-footer-exit-done {
+    opacity: 0;
+    transform: translateX(-100%);
+}

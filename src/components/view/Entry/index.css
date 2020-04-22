@@ -1,0 +1,641 @@
+/* [~]====================[~] */
+/* [~]===[ TRANSITION ]===[~] */
+/* [~]====================[~] */
+.transition {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100vw;
+  height: 85vh;
+  transition: height 400ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.transition-enter {
+  height: 85vh; }
+
+.transition-enter-active {
+  height: 30vh; }
+
+.transition-enter-done {
+  height: 30vh; }
+
+.trasition-exit {
+  height: 30vh; }
+
+.trasition-exit-active {
+  height: 85vh; }
+
+/* [~]===========================[~] */
+/* [~]===[ BUTTON TRANSITION ]===[~] */
+/* [~]===========================[~] */
+.buttonTransition {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 15vh;
+  width: 100vw; }
+
+.buttonTransition-enter {
+  opacity: 1;
+  height: 15vh; }
+
+.buttonTransition-enter-active {
+  opacity: 0;
+  height: 0;
+  transition: all 400ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.buttonTransition-enter-done {
+  opacity: 0;
+  height: 0; }
+
+.buttonTransition-exit {
+  opacity: 0;
+  height: 0; }
+
+.buttonTransition-exit-active {
+  opacity: 1;
+  height: 15vh;
+  transition: all 400ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+/* [~]===========================[~] */
+/* [~]===[ CONTENT ANIMATION ]===[~] */
+/* [~]===========================[~] */
+.contentAnimation {
+  text-align: justify;
+  position: absolute;
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  padding: 25vh 5vw 0 5vh;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  overflow-y: scroll; }
+
+.contentAnimation-enter {
+  opacity: 0;
+  top: 100%; }
+
+.contentAnimation-enter-active {
+  opacity: 1;
+  top: 0;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.contentAnimation-enter-done {
+  opacity: 1;
+  top: 0; }
+
+.contentAnimation-exit {
+  opacity: 1;
+  top: 0; }
+
+.contentAnimation-exit-active {
+  opacity: 0;
+  top: 100%;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contentAnimation {
+    width: 50%;
+    padding: 40vh 5vw 0 5vh;
+    overflow-y: scroll; } }
+
+@media screen and (min-width: 1024px) {
+  .contentAnimation {
+    width: 50%;
+    padding: 35vh 5vw 0 5vh;
+    overflow-y: hidden; } }
+
+/* [~]================================[~] */
+/* [~]===[ START BUTTON ANIMATION ]===[~] */
+/* [~]================================[~] */
+.startButtonAnimation {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+  transform: translateY(200px);
+  transition: all .3s;
+  outline: none;
+  float: right; }
+
+.startButtonAnimation-enter {
+  margin-top: 20px;
+  transform: translateY(200px);
+  transition: all 1300ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.startButtonAnimation-enter-done {
+  margin-top: 20px;
+  transform: translateY(0); }
+
+.startButtonAnimation-enter-active {
+  margin-top: 20px;
+  transform: translateY(0);
+  transition: all 1300ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.startButtonAnimation-exit {
+  margin-top: 20px;
+  transform: translateY(0); }
+
+.startButtonAnimation-exit-active {
+  margin-top: 20px;
+  transform: translateY(200px);
+  transition: all 1300ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.startButtonAnimation:hover {
+  cursor: pointer;
+  background: grey; }
+
+/* [~]======================================[~] */
+/* [~]===[ BACKGROUND OVERLAY ANIMATION ]===[~] */
+/* [~]======================================[~] */
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0); }
+
+.backgroundOverlay-enter {
+  background-color: rgba(0, 0, 0, 0); }
+
+.backgroundOverlay-enter-active {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 300ms linear; }
+
+.backgroundOverlay-enter-done {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.backgroundOverlay-exit {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.backgroundOverlay-exit-active {
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 300ms linear; }
+
+/* [~]===================================[~] */
+/* [~]===[ LOGO TRANSITION ANIMATION ]===[~] */
+/* [~]===================================[~] */
+.logoTransition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+
+.logoTransition-enter {
+  height: 30vh;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.logoTransition-enter-active {
+  height: 30vh;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.logoTransition-enter-done {
+  height: 30vh; }
+
+.logoTransition-exit {
+  height: 30vh; }
+
+.logoTransition-exit-active {
+  height: 100vh;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+/* [~]===================================[~] */
+/* [~]===[ LOGO TRANSITION ANIMATION ]===[~] */
+/* [~]===================================[~] */
+.continueButton-enter {
+  opacity: 1;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.continueButton-enter-active {
+  opacity: 0;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+.continueButton-enter-done {
+  opacity: 0; }
+
+.continueButton-exit {
+  opacity: 0; }
+
+.contentAnimation-exit-active {
+  opacity: 1;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9); }
+
+/* [~]==============================[~] */
+/* [~]===[ SHAPE LEFT ANIMATION ]===[~] */
+/* [~]==============================[~] */
+.shapeLeft-enter {
+  transform: translate(0, -100%) !important; }
+
+.shapeLeft-enter-active {
+  transform: translate(-100%, -200%) !important;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9) !important; }
+
+.shapeLeft-enter-done {
+  transform: translate(-100%, -200%) !important; }
+
+.shapeLeft-exit {
+  transform: translate(-100%, -200%) !important; }
+
+.shapeLeft-exit-active {
+  transform: translate(0, -100%) !important;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9) !important; }
+
+/* [~]===============================[~] */
+/* [~]===[ SHAPE RIGHT ANIMATION ]===[~] */
+/* [~]===============================[~] */
+.shapeRight-enter {
+  transform: translate(0, -200%) !important; }
+
+.shapeRight-enter-active {
+  transform: translate(100%, -300%) !important;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9) !important; }
+
+.shapeRight-enter-done {
+  transform: translate(100%, -300%) !important; }
+
+.shapeRight-exit {
+  transform: translate(100%, -300%) !important; }
+
+.shapeRight-exit-active {
+  transform: translate(0, -200%) !important;
+  transition: all 700ms cubic-bezier(0.3, 0.9, 0.3, 0.9) !important; }
+
+/* [~]================================[~] */
+/* [~]===[  anime divs laterais   ]===[~] */
+/* [~]================================[~] */
+.color {
+  width: 100%;
+  height: 100vh;
+  background: #f21b54;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  transform-origin: top right;
+  transform: translate(0%, -100%);
+  animation: color 0.5s 0.5s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  z-index: 1; }
+
+.color::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  clip-path: polygon(0 0, 0% 99.5%, 99.5% 0);
+  animation: colorbefore 0.5s 0.5s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  display: block;
+  transform-origin: top left;
+  z-index: 1; }
+
+@keyframes color {
+  from {
+    clip-path: polygon(0 0, 0% 100%, 100% 0); }
+  to {
+    clip-path: polygon(0 48%, 0 85%, 30% 57%); } }
+
+@keyframes colorbefore {
+  from {
+    clip-path: polygon(0 0, 0% 99.5%, 99.5% 0);
+    opacity: 1; }
+  to {
+    clip-path: polygon(0 48.6%, 0 84%, 28.8% 57.2%);
+    opacity: 1; } }
+
+.color2 {
+  width: 100%;
+  height: 100vh;
+  background: #f21b54;
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  transform-origin: top right;
+  transform: translate(0%, -200%);
+  animation: color2 0.5s 0.5s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  z-index: 1; }
+
+.color2::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  clip-path: polygon(100% 100%, 0.5% 100%, 100% 0.5%);
+  animation: color2before 0.5s 0.5s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  display: block;
+  transform-origin: bottom right;
+  z-index: 1; }
+
+@keyframes color2 {
+  from {
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0); }
+  to {
+    clip-path: polygon(100% 52%, 70% 43%, 100% 15%); } }
+
+@keyframes color2before {
+  from {
+    clip-path: polygon(100% 100%, 0.5% 100%, 100% 0.5%);
+    opacity: 1; }
+  to {
+    clip-path: polygon(100% 51.4%, 71.2% 42.8%, 100% 16%);
+    opacity: 1; } }
+
+/* [~]================================[~] */
+/* [~]===[    anime background    ]===[~] */
+/* [~]================================[~] */
+.color3 {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  background-image: url(./design/img/fotofundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: color31 0.7s 0.6s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards, color32 7s 1.3s linear forwards, color33 10s 8.3s cubic-bezier(0.42, 0.16, 0.47, 0.82) infinite; }
+
+@keyframes color31 {
+  0% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0.95;
+    transform: scale(1.2); } }
+
+@keyframes color32 {
+  0% {
+    opacity: 0.95;
+    transform: scale(1.2); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes color33 {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.07); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+/* [~]================================[~] */
+/* [~]===[  anime logo essencial  ]===[~] */
+/* [~]================================[~] */
+.colorr {
+  stroke: #FFFFFF;
+  fill: #ffffff; }
+
+.pos {
+  width: 30%;
+  height: 30vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; }
+
+.pos2 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; }
+
+.animetext {
+  fill-opacity: 0;
+  stroke-dasharray: 1001;
+  stroke-dashoffset: 1001;
+  animation: essencialstroke 2s 2s linear forwards, essencialfill 2s 3s  linear forwards;
+  z-index: 999; }
+
+@keyframes essencialstroke {
+  0% {
+    stroke-dashoffset: 1001; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes essencialfill {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.animetext2 {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: inovacoesfill 2s 3s linear forwards;
+  z-index: 999; }
+
+@keyframes inovacoesfill {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.animelogo1 {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logofill 1s 1s ease forwards;
+  z-index: 999; }
+
+@keyframes logofill {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.animelogo2 {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logofill2 1s 1.3s ease forwards;
+  z-index: 999; }
+
+@keyframes logofill2 {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 100; } }
+
+.animelogo3 {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logofill3 1s 1.6s ease forwards;
+  z-index: 999; }
+
+@keyframes logofill3 {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.animelogo4 {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logofill4 1s 1.9s ease forwards;
+  z-index: 999; }
+
+@keyframes logofill4 {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.animelogo11 {
+  transform-origin: center;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logoscale 0.5s 0.7s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  z-index: 999; }
+
+@keyframes logoscale {
+  0% {
+    transform: scale(3) translate(0%, -20%);
+    fill-opacity: 1; }
+  80% {
+    fill-opacity: 1; }
+  100% {
+    transform: scale(0.1) translate(0%, -40%);
+    fill-opacity: 0; } }
+
+.animelogo12 {
+  transform-origin: center;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logoscale2 0.5s 1s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  z-index: 999; }
+
+@keyframes logoscale2 {
+  0% {
+    transform: scale(3) translate(0%, 40%);
+    fill-opacity: 1; }
+  80% {
+    fill-opacity: 1; }
+  100% {
+    transform: scale(0.1) translate(0%, -40%);
+    fill-opacity: 0; } }
+
+.animelogo13 {
+  transform-origin: center;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logoscale3 0.5s 1.3s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  z-index: 999; }
+
+@keyframes logoscale3 {
+  0% {
+    transform: scale(3) translate(-200%, 40%);
+    fill-opacity: 1; }
+  80% {
+    fill-opacity: 1; }
+  100% {
+    transform: scale(0.1) translate(0%, -40%);
+    fill-opacity: 0; } }
+
+.animelogo14 {
+  transform-origin: center;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  animation: logoscale4 0.5s 1.6s cubic-bezier(0.3, 0.9, 0.3, 0.9) forwards;
+  z-index: 999; }
+
+@keyframes logoscale4 {
+  0% {
+    transform: scale(3) translate(200%, 40%);
+    fill-opacity: 1; }
+  80% {
+    fill-opacity: 1; }
+  100% {
+    transform: scale(0.1) translate(0%, -40%);
+    fill-opacity: 0; } }
+
+/* [~]================================[~] */
+/* [~]===[    anime logo login    ]===[~] */
+/* [~]================================[~] */
+.colorrr {
+  fill: #f21b54;
+  stroke: #cecece;
+  fill-opacity: 1; }
+
+.pos3 {
+  width: 20vw;
+  height: 20vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(100%, 100%);
+  z-index: 999; }
+
+.animelogin {
+  fill-opacity: 0;
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation: loginstroke 1.5s 4.5s linear forwards, loginfill 2s 5.5s  linear forwards, loginfill2 2s 5.5s  linear infinite;
+  z-index: 999; }
+
+@keyframes loginstroke {
+  0% {
+    stroke-dashoffset: 1560; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes loginfill {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 1; }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 0; } }
+
+@keyframes loginfill2 {
+  0% {
+    fill: #f21b54; }
+  50% {
+    fill: #a60832; }
+  100% {
+    fill: #f21b54; } }
+
+.continue {
+  fill: #f21b54;
+  fill-opacity: 0;
+  animation: continue 1s 7s linear forwards; }
+
+@keyframes continue {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.ponto1 {
+  fill-opacity: 0%;
+  animation: ponto1 0.5s 7.1s linear infinite; }
+
+@keyframes ponto1 {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.ponto2 {
+  fill-opacity: 0%;
+  animation: ponto2 0.5s 7.2s linear infinite; }
+
+@keyframes ponto2 {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.ponto3 {
+  fill-opacity: 0%;
+  animation: ponto3 0.5s 7.3s linear infinite; }
+
+@keyframes ponto3 {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }

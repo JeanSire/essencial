@@ -1,0 +1,31 @@
+{
+    "name": "xdkey/essencial",
+    "description": "Essencial integrated system server backend and api.",
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Gustavo Eklund",
+            "email": "gustavo.franca@fatec.sp.gov.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "Classes/",
+            "Controllers\\": "Controllers/",
+            "Interfaces\\": "Interfaces/",
+            "Models\\": "Models/",
+            "Traits\\": "Traits/"
+        },
+        "files": ["config.php"]
+    }
+}

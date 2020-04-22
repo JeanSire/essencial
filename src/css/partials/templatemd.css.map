@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,aAAa,EACb,sEAGU;CACb",
+    "sources": [
+        "templatemd.scss"
+    ],
+    "names": [],
+    "file": "templatemd.css"
+}
