@@ -40,7 +40,7 @@ define('DATABASE', [
 ]); // define
 
 // Chave de autenticação do token de autenticação
-define('TOKEN_SECRET_KEY', 'eqpoda_123');
+define('TOKEN_SECRET_KEY', 'server_token');
 
 // Configuração de exibição de erros
 // Se o modo produção estiver habilitado, esconde todos os erros do usuário
